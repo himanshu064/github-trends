@@ -1,7 +1,6 @@
 *.pyc
 __pycache__
 
-.vscode
 
 backend/.env
 backend/.venv
@@ -10,5 +9,7 @@ backend/gcloud_key.json
 
 frontend/.env
 .DS_Store
-config.bat
 node_modules
+
+!.env.example
+config.bat

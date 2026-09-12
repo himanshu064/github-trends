@@ -50,10 +50,10 @@
   "scripts": {
     "setup-trends": "cp ./public/trends.html ./public/index.html",
     "setup-wrapped": "cp ./public/wrapped.html ./public/index.html",
-    "start-trends": "yarn setup-trends && REACT_APP_MODE=trends react-scripts start",
-    "start-wrapped": "yarn setup-wrapped && REACT_APP_MODE=wrapped PORT=3001 react-scripts start",
-    "build-trends": "yarn setup-trends && REACT_APP_MODE=trends react-scripts build",
-    "build-wrapped": "yarn setup-wrapped && REACT_APP_MODE=wrapped react-scripts build",
+    "start-trends": "node init && yarn setup-trends && REACT_APP_MODE=trends react-scripts start",
+    "start-wrapped": "node init && yarn setup-wrapped && REACT_APP_MODE=wrapped PORT=3001 react-scripts start",
+    "build-trends": "node init && yarn setup-trends && REACT_APP_MODE=trends react-scripts build",
+    "build-wrapped": "node init && yarn setup-wrapped && REACT_APP_MODE=wrapped react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
