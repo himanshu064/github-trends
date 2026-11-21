@@ -12,4 +12,3 @@ frontend/.env
 node_modules
 
 !.env.example
-config.bat
